@@ -1,0 +1,15 @@
+.navigation-container {
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+    background-color: var(--pearl-color);
+}
+
+.nav-item {
+    display: inline;
+    padding: 1rem;
+}
+
+.nav-item:hover {
+    background-color: var(--gray);
+}
