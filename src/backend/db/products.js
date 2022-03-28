@@ -8,11 +8,12 @@ import { v4 as uuid } from "uuid";
 export const products = [
   {
     _id: uuid(),
-    title: "FRIENDS t-shirt",
+    title: "FRIENDS T-shirt",
     availbility: "In stock",
     price: "499",
     categoryName: "F.R.I.E.N.D.S.",
-    photo: "/friends1.jpg"
+    photo: "/friends1.jpg",
+    rating : "3"
   },
   {
     _id: uuid(),
@@ -20,7 +21,8 @@ export const products = [
     availbility: "Out Of Stock",
     price: "450",
     categoryName: "Avengers",
-    photot: "/captain-america.jpg"
+    photo: "/captain-america.jpg",
+    rating : "5"
   },
   {
     _id: uuid(),
@@ -28,6 +30,7 @@ export const products = [
     availbility: "Out Of Stock",
     price: "400",
     categoryName: "Harry Potter",
-    photo: "/hogwarts.jpg"
+    photo: "/hogwarts.jpg",
+    rating : "4"
   },
 ];
