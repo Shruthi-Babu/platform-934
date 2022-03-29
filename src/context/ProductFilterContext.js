@@ -4,10 +4,23 @@ import filterReducer from "./reducers/filterReducer";
 const ProductFilterContext = createContext();
 
 function ProductFilterContextProvider ({children}) {
-    const filterState = {sort: "asc", availability: "includeOOS", rating: "all"};
-    const [state, dispatch]= useReducer(filterState, filterReducer);
+    const filterState = {
+        sort: "",
+        includeOOS: false,
+        rating: "all",
+        fastDelivery : false,
+        category: {
+            "Harry Potter": true,
+            "Game Of Thrones":true,
+            "Avengers": true,
+            "F.R.I.E.N.D.S.": true
+        }
+    };
 
-    return <ProductFilterContext.Provider>
+    const [state, dispatch] = useReducer(filterReducer, filterState );
+
+
+    return <ProductFilterContext.Provider value={{state, dispatch}}>
         {children}
     </ProductFilterContext.Provider>
 }
