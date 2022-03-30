@@ -1,5 +1,6 @@
 import "./App.css";
-import {Navigation, Login, Cart, Wishlist, Catalogue, LandingPage, Content, Footer} from "./Components";
+import {Navigation} from "./Components";
+import {Cart, Login, Catalogue, LandingPage, Wishlist} from './pages';
 import {Routes, Route} from "react-router-dom";
 import Mockman from "mockman-js";
 

@@ -3,14 +3,21 @@ import {useProductFilter} from "../context/ProductFilterContext";
 
 function FilterSection() {
     const {state, dispatch} = useProductFilter();    
-    const [checked, setChecked] = useState(true);
+    const [categoryChecked, setChecked] = useState(true);
+
+    function handleRatingChange(event){
+        dispatch({ payload: event.target.value, type: "rating" });
+    }
+
+    function handleCategoryChange(event){        
+        dispatch({type: "category", payload: event.target.value});
+        setChecked(!categoryChecked);
+    }
 
     function handleSortChange(event) {
         dispatch({ payload: event.target.value, type: "sort" });
-        console.log(event.target.value);
-        console.log(JSON.stringify(state));
     }
-    
+
     function handleFilterChange(event) {
         if (event.target.value === "includeOOS")
             dispatch({ type: "toggleInventory" });
@@ -18,19 +25,6 @@ function FilterSection() {
             dispatch({ type: "toggledelivery" });
         }
     }
-
-    function handleRatingChange(event){
-        dispatch({ payload: event.target.value, type: "rating" });
-        console.log(event.target.value);
-        console.log(JSON.stringify(state));
-    }
-
-    function handleCategoryChange(event){        
-        dispatch({type: "category", payload: event.target.value});
-        console.log(event.target.value);
-        setChecked(!checked);
-    }
-
 
     return (
         <div>
@@ -112,7 +106,7 @@ function FilterSection() {
                     type="checkbox"
                     name="filter"
                     value="Harry Potter"
-                    defaultChecked={checked}
+                    defaultChecked={categoryChecked}
                     onChange={handleCategoryChange}
                 />{" "}
                 Harry Potter
@@ -120,7 +114,7 @@ function FilterSection() {
                     type="checkbox"
                     name="filter"
                     value="Avengers"
-                    defaultChecked={checked}
+                    defaultChecked={categoryChecked}
                     onChange={handleCategoryChange}
                 />{" "}
                 Avengers   
@@ -128,7 +122,7 @@ function FilterSection() {
                     type="checkbox"
                     name="filter"
                     value="Game Of Thrones"
-                    defaultChecked={checked}
+                    defaultChecked={categoryChecked}
                     onChange={handleCategoryChange}
                 />{" "}
                 Game Of Thrones
@@ -136,7 +130,7 @@ function FilterSection() {
                     type="checkbox"
                     name="filter"
                     value="F.R.I.E.N.D.S."
-                    defaultChecked={checked}
+                    defaultChecked={categoryChecked}
                     onChange={handleCategoryChange}
                 />{" "}
                 F.R.I.E.N.D.S.                

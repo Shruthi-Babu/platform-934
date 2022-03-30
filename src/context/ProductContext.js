@@ -7,13 +7,18 @@ function ProductContextProvider ({children}){
     const [products, setProducts] = useState([]);
 
     useEffect(()=>{
-        fetch('/api/products', {method:"GET",})
-        .then(res=>res.json())
-        .then((response) => {
-            console.log(response.products);
-            setProducts(response.products);
-        })    
-      }, [])
+        (async ()=> {
+            try {
+                const response = await fetch('/api/products');
+                const json = await response.json();
+                setProducts(json.products);
+            } catch (e) {
+                console.error(e);
+                setProducts([]);
+            }  
+        })();
+    })
+      
 
     return <ProductContext.Provider value={{products}}>
         {children}

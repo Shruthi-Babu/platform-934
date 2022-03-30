@@ -38,7 +38,7 @@ let rating  = props.rating;
           <span className="footer-icon">
             <i className="fa fa-shopping-cart"></i>
           </span>
-          <p className="footer-text">Shop Now</p>
+          <p className="footer-text">Add to Cart</p>
         </button>
       </div>
       {availbility==="Out Of Stock" && <span className="text-overlay">Sold Out</span>}

@@ -1,8 +1,5 @@
 const filterReducer = (state, action) => {
     let {type, payload} = action;
-    console.log(payload);
-    console.log(type);
-
     switch (type) {
         case "sort":
             return { ...state, sort: payload };
@@ -19,4 +16,5 @@ const filterReducer = (state, action) => {
     }
   };
 
+  
 export default filterReducer;

@@ -14,7 +14,9 @@ function ProductFilterContextProvider ({children}) {
             "Game Of Thrones":true,
             "Avengers": true,
             "F.R.I.E.N.D.S.": true
-        }
+        },
+        cart: [],
+        wishlist: []
     };
 
     const [state, dispatch] = useReducer(filterReducer, filterState );
