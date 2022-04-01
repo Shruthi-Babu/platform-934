@@ -1,0 +1,54 @@
+@import './Constants.css';
+
+.filter-section {
+    padding: 1rem;
+}
+
+.filter-item {
+    display: inline;
+    align-items: center;
+}
+
+.all-filters >div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+@media (max-width: 40rem) {
+    .all-filters >div {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* .filter-heading {
+    display: block;
+} */
+/* 
+.category-filter{
+    display: flex;
+    flex-direction: column;
+}
+
+.other-filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating-filter {
+display: flex;
+flex-direction: column;
+} */
+
+.sorting-filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    color: var(--black);
+    text-decoration: underline;
+    padding: 1rem;
+    cursor: pointer;
+}

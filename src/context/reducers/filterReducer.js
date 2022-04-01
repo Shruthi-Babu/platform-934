@@ -11,6 +11,21 @@ const filterReducer = (state, action) => {
             return {...state, rating: payload};
         case "category":
             return {...state, category: {...state.category, [payload]: !state.category[payload]}};
+        case "reset":
+            return {
+                sort: "",
+                includeOOS: false,
+                rating: "all",
+                fastDelivery : false,
+                category: {
+                    "Harry Potter": true,
+                    "Game Of Thrones":true,
+                    "Avengers": true,
+                    "F.R.I.E.N.D.S.": true
+                },
+                cart: [],
+                wishlist: []
+            };
         default:
             return state;
     }

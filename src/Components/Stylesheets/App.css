@@ -1,0 +1,20 @@
+@import './Constants.css';
+
+/* .App {
+    display: grid;
+    grid-template-areas: 'navbar navbar navbar navbar navbar'
+    'navbar navbar navbar navbar navbar'
+    'content content content content content '
+    'content content content content content '
+    'content content content content content '
+    'content content content content content '
+    'content content content content content ';
+}
+
+.nav-bar {
+    grid-area: navbar;
+}
+
+.routes {
+    grid-area: content;
+} */

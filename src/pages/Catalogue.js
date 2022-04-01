@@ -15,17 +15,23 @@ function Catalogue() {
     productData = getFilteredData(state, productData);
 
     return (
-        <div>
+        <div className='catalogue'>
             <h1>Catalogue</h1>      
-            <FilterSection/>
-            <div className='productListing'>
-                {productData.map(p => 
-                <ProductCard key={p._id} title={p.title} availbility={p.availbility} price={p.price} categoryName={p.categoryName} photo={p.photo} rating = {p.rating}/>)}
+            <div className='content'>
+                <div>
+                    <FilterSection className="filter-section"/>
+                </div>
+                
+                <div className="product-listing">
+                    {/* <div > */}
+                        {productData.map(p => 
+                        <ProductCard className="product-item" key={p._id} title={p.title} availbility={p.availbility} price={p.price} categoryName={p.categoryName} photo={p.photo} rating = {p.rating}/>)}
+                    {/* </div> */}
+                </div>                  
             </div>
         </div>        
     )
 }
 
 
-//productData = {p.title}
 export default Catalogue

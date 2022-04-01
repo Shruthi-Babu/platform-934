@@ -1,0 +1,25 @@
+:root {
+    --primary-color: white;
+    --black: black;
+    --pearl-color:rgb(228, 212, 212);
+    --off-white: #f5f5f5;
+    --purple: #551ADE;
+    --dark-gray: #312e2e;
+    --badge-icon-bg-color:blue;
+    --badge-avatar-bg-color:green;
+    --button-bg-color: #07beb8;
+    --danger-color:#ff7f7f;
+    --warning-color: #ffcc00;
+    --success-color: #76EE00;
+    --badge-icon-bg-color:hotpink;
+    --badge-avatar-bg-color:green;
+    --teal-color:#0C9;
+    --gold-color: gold;
+    --background: #f1b5b5;
+    --gray : rgb(131, 127, 127);
+    --primary-color: white;
+}
+
+html {
+    font-size: 62.5%;
+}

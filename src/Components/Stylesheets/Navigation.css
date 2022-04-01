@@ -1,4 +1,5 @@
 .navigation-container {
+    grid-area: navbar;
     list-style-type: none;
     margin: 0;
     padding: 1rem;

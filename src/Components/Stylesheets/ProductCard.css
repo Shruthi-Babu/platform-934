@@ -1,2 +1,137 @@
 /* @import url(https://my-ui-shruthi.netlify.app/card/card.css); */
-@import url(https://my-ui-shruthi.netlify.app/styles.css);
+/* @import url(https://my-ui-shruthi.netlify.app/styles.css); */
+@import './Constants.css';
+
+.card {
+    margin: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    position: relative;
+}
+.card-with-badge {
+    position: relative;
+}
+.card-badge {
+    position: absolute;
+    top: 0%;
+    left:90%;
+    font-size: 2rem;
+}
+
+.card-badge:hover {
+    color: var(--warning-color);
+}
+
+.card:hover{
+    box-shadow: 0 1rem 1rem rgba(33,33,33,.7);
+    }
+
+.card-standard {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.card-horizontal {
+    width: 45%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.card-close-btn {
+    font-size: 2rem;
+    position: absolute;
+    color: var(--gray);
+    right: 0px;
+    border-radius: 50%;
+    top:0;
+}
+
+.card-close-btn:hover {
+    color: rgba(33,33,33,.7);
+    cursor: pointer;
+}
+
+.text-overlay {
+    background-color: rgba(128, 128, 128, 0.5);
+    color: var(--primary-color);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-weight: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+}
+
+img {
+   margin: auto;
+   width: 100%;
+   object-fit: cover;
+   margin: 0 auto;
+   border-radius: 1rem;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.card-desc {
+    text-align: center;
+    margin: 1rem;
+    padding: 0 8px;
+    color: var(--gray);
+}
+.price-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+}
+.card-rating{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    font-size: 1rem;
+    margin: 0;
+}
+li{
+    padding: 5px;
+}
+.filled {
+    color:var(--warning-color);
+}
+.fa-shopping-cart {
+    font-size: 1.5rem;
+}
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 90%;
+    height: 2rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--background);
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    bottom: 1rem;
+}

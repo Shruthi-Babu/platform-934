@@ -1,10 +1,10 @@
-import { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useContext, useState, useEffect, useReducer } from "react";
 
 
 const ProductContext = createContext({});
 
 function ProductContextProvider ({children}){
-    const [products, setProducts] = useState([]);
+    const [products, setProducts] = useState([]);   
 
     useEffect(()=>{
         (async ()=> {

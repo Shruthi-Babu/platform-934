@@ -31,7 +31,7 @@ let rating  = props.rating;
         </p>
 
         <ul className="card-rating">
-            <li><i className="fa fa-star" aria-hidden="true"></i></li>
+          <li><i className="fa fa-star" aria-hidden="true"></i></li>
         </ul>  
 
         <button className="card-footer">
