@@ -6,15 +6,16 @@ let title = props.title;
 let availbility = props.availbility;
 let price= props.price;
 let categoryName = props.categoryName;
-let photo = `../assets${props.photo}`;
+//  let photo = `../assets${props.photo}`;
+let photo = props.photo;
 let rating  = props.rating;
   return (
     <div>
-        
         <div className="card card-standard">
-      {/* <div className="card-img">
-        <img src={require(photo)} alt="card image"/>          
-      </div> */}
+      <div className="card-img">
+        {/* <img src={require("../assets/floopy.jpg")} alt="card image"/>       */}
+        <img src={photo} />    
+      </div>
         
       <div className="card-body">
 

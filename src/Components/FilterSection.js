@@ -33,10 +33,10 @@ function FilterSection() {
 
     return (
         <div className='filter-section'>
-            <h3>Filter</h3>
+            <h2>Filters</h2>
             <p onClick={handleClearFilter} className="btn">Clear All</p>
             <div className='all-filters'>
-                <div className="sorting-filter">    
+                <div className="sort filter">    
                     <strong className="filter-heading">Sort by</strong>
                     <label>
                         <input className="filter-item"
@@ -57,7 +57,7 @@ function FilterSection() {
                         Price - Low to high  
                     </label>  
                 </div>
-                <div className="rating-filter">    
+                <div className="rate filter">    
                     <strong className="filter-heading">Rating</strong>
                     <label><input className="filter-item"
                         type="radio"
@@ -103,7 +103,7 @@ function FilterSection() {
                     5 stars   
                     </label>
                 </div>
-                <div className="other-filter">                
+                <div className="other filter">                
                     <strong className="filter-heading">Filter</strong>
                     <label><input className="filter-item"
                         type="checkbox"
@@ -123,7 +123,7 @@ function FilterSection() {
                         Fast Delivery 
                     </label>              
                 </div>
-                <div className="category-filter">                
+                <div className="category filter">                
                     <strong className="filter-heading">Category</strong>
                     <label><input className="filter-item"
                         type="checkbox"

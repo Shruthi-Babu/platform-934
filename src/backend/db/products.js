@@ -12,7 +12,7 @@ export const products = [
     availbility: "In stock",
     price: "499",
     categoryName: "F.R.I.E.N.D.S.",
-    photo: "/friends1.jpg",
+    photo: "../assets/friends1.jpg",
     fastDelivery: false,
     rating : "3"
   },
@@ -22,7 +22,7 @@ export const products = [
     availbility: "Out Of Stock",
     price: "450",
     categoryName: "Avengers",
-    photo: "/captain-america.jpg",
+    photo: "../assets/captain-america.jpg",
     fastDelivery: true,
     rating : "5"
   },
@@ -32,7 +32,7 @@ export const products = [
     availbility: "Out Of Stock",
     price: "400",
     categoryName: "Harry Potter",
-    photo: "/hogwarts.jpg",
+    photo: "../assets/hogwarts.jpg",
     fastDelivery: true,
     rating : "4"
   },
@@ -42,7 +42,7 @@ export const products = [
     availbility: "In stock",
     price: "479",
     categoryName: "Harry Potter",
-    photo: "/dobby.jpg",
+    photo: "../assets/dobby.jpg",
     fastDelivery: false,
     rating : "3"
   },
@@ -52,7 +52,7 @@ export const products = [
     availbility: "In stock",
     price: "459",
     categoryName: "F.R.I.E.N.D.S.",
-    photo: "/floopy.jpg",
+    photo: "../assets/floopy.jpg",
     fastDelivery: true,
     rating : "1"
   },
@@ -62,7 +62,7 @@ export const products = [
     availbility: "Out Of Stock",
     price: "400",
     categoryName: "Harry Potter",
-    photo: "/hogwarts.jpg",
+    photo: "../assets/hogwarts.jpg",
     fastDelivery: true,
     rating : "4"
   },
@@ -72,7 +72,7 @@ export const products = [
     availbility: "In stock",
     price: "439",
     categoryName: "Avengers",
-    photo: "/iron-man.jpg",
+    photo: "../assets/iron-man.jpg",
     fastDelivery: false,
     rating : "5"
   },
@@ -82,7 +82,7 @@ export const products = [
     availbility: "Out Of Stock",
     price: "400",
     categoryName: "Avengers",
-    photo: "/marve2.jpg",
+    photo: "../assets/marve2.jpg",
     fastDelivery: true,
     rating : "1"
   },
@@ -92,7 +92,7 @@ export const products = [
     availbility: "Out Of Stock",
     price: "410",
     categoryName: "Game Of Thrones",
-    photo: "/not-today.jpg",
+    photo: "../assets/not-today.jpg",
     fastDelivery: true,
     rating : "1"
   },

@@ -9,37 +9,18 @@
     align-items: center;
 }
 
-.all-filters >div {
+.filter {
     display: flex;
     flex-direction: column;
     text-align: left;
 }
 
 @media (max-width: 40rem) {
-    .all-filters >div {
+    .all-filters {
         display: flex;
-        flex-direction: row;
+        flex-direction: wrap;
     }
 }
-
-/* .filter-heading {
-    display: block;
-} */
-/* 
-.category-filter{
-    display: flex;
-    flex-direction: column;
-}
-
-.other-filter {
-    display: flex;
-    flex-direction: column;
-}
-
-.rating-filter {
-display: flex;
-flex-direction: column;
-} */
 
 .sorting-filter {
     display: flex;
