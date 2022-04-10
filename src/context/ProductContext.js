@@ -17,7 +17,7 @@ function ProductContextProvider ({children}){
                 setProducts([]);
             }  
         })();
-    })
+    },[products]);
       
 
     return <ProductContext.Provider value={{products}}>

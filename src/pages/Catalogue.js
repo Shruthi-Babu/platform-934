@@ -5,6 +5,7 @@ import { useProductFilter } from '../context/ProductFilterContext';
 import '../Components/Stylesheets/Catalogue.css';
 
 import {getFilteredData} from '../utils';
+import { useEffect, useState } from 'react';
 
 
 function Catalogue() {
@@ -12,7 +13,9 @@ function Catalogue() {
     const {state, dispatch} = useProductFilter();
     let productData = products.products;
 
-    productData = getFilteredData(state, productData);
+    productData = getFilteredData(state, productData, dispatch);
+
+    //console.log(productData);
 
     return (
         <div className='catalogue'>
@@ -23,10 +26,8 @@ function Catalogue() {
                 </div>
                 
                 <div className="product-listing">
-                    {/* <div > */}
                         {productData.map(p => 
-                        <ProductCard className="product-item" key={p._id} title={p.title} availbility={p.availbility} price={p.price} categoryName={p.categoryName} photo={p.photo} rating = {p.rating}/>)}
-                    {/* </div> */}
+                        <ProductCard className="product-item" key={p.id} id={p.id} title={p.title} availbility={p.availbility} price={p.price} categoryName={p.categoryName} photo={p.photo} rating = {p.rating}/>)}
                 </div>                  
             </div>
         </div>        

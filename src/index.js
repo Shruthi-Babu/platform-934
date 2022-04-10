@@ -7,6 +7,8 @@ import {BrowserRouter} from "react-router-dom";
 import {ProductContextProvider} from "../src/context/ProductContext";
 import {ProductFilterContextProvider} from "../src/context/ProductFilterContext";
 import {UserContextProvider} from "./context/UserContext";
+import {CategoryContextProvider} from "./context/CategoryContext";
+import '../node_modules/font-awesome/css/font-awesome.min.css'; 
 
 // Call make Server
 makeServer();
@@ -17,7 +19,9 @@ ReactDOM.render(
       <ProductContextProvider>
         <ProductFilterContextProvider>
           <UserContextProvider>
-            <App />
+            <CategoryContextProvider>
+              <App />
+            </CategoryContextProvider>            
           </UserContextProvider>          
         </ProductFilterContextProvider>        
       </ProductContextProvider>

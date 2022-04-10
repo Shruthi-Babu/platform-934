@@ -13,8 +13,18 @@ function Navigation() {
               </div>
               <div className='right-nav'>
                 <Link className='nav-item' to="/login">Login</Link>
-                <Link className='nav-item' to="/wishlist">Wishlist</Link>
-                <Link className='nav-item' to="/cart">Cart</Link>
+                <Link className='nav-item' to="/wishlist">
+                  <span className='icon'>
+                    <i className="fa fa-heart"></i>
+                  </span>
+                  Wishlist
+                </Link>
+                <Link className='nav-item' to="/cart">
+                  <span className="icon">
+                    <i className="fa fa-shopping-cart"></i>
+                  </span>
+                  Cart
+                </Link>
               </div>
             </div>
         </nav>

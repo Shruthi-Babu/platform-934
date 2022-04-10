@@ -15,6 +15,15 @@
     text-align: left;
 }
 
+.filter-main-heading{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.clear-btn{
+    margin-top: 0;
+}
+
 @media (max-width: 40rem) {
     .all-filters {
         display: flex;
@@ -32,4 +41,7 @@
     text-decoration: underline;
     padding: 1rem;
     cursor: pointer;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.2rem;
 }

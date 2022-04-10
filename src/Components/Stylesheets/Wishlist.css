@@ -1,0 +1,26 @@
+@import './Constants.css';
+
+
+.empty-wishlist{
+    width: 30%;
+    height: 50%;
+    margin:auto;
+}
+
+.empty-cart {
+    width: 30%;
+    height: 50%;
+    margin:auto;
+}
+
+.empty-text{
+    font-size: 3rem;
+}
+
+.horizontal-listing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    grid-gap: 1rem;
+}
+
