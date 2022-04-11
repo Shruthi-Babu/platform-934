@@ -10,9 +10,9 @@ function ProductFilterContextProvider ({children}) {
         rating: "all",
         fastDelivery : false,
         category: {
-            "Harry Potter": true,
-            "Game Of Thrones":true,
-            "Avengers": true,
+            "HARRY POTTER": true,
+            "GAME OF THRONES":true,
+            "AVENGERS": true,
             "F.R.I.E.N.D.S.": true
         },
         cart: [],

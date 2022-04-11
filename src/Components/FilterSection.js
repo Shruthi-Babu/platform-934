@@ -153,8 +153,8 @@ function FilterSection() {
               className="filter-item"
               type="checkbox"
               name="filter"
-              value="Harry Potter"
-              checked={state.category["Harry Potter"]}
+              value="HARRY POTTER"
+              checked={state.category["HARRY POTTER"]}
               //defaultChecked={state.category["Harry Potter"]}
               onChange={handleCategoryChange}
             />
@@ -165,8 +165,8 @@ function FilterSection() {
               className="filter-item"
               type="checkbox"
               name="filter"
-              value="Avengers"
-              checked={state.category["Avengers"]}
+              value="AVENGERS"
+              checked={state.category["AVENGERS"]}
               //defaultChecked={state.category["Avengers"]}
               onChange={handleCategoryChange}
             />
@@ -177,8 +177,8 @@ function FilterSection() {
               className="filter-item"
               type="checkbox"
               name="filter"
-              value="Game Of Thrones"
-              checked={state.category["Game Of Thrones"]}
+              value="GAME OF THRONES"
+              checked={state.category["GAME OF THRONES"]}
               //defaultChecked={state.category["Game Of Thrones"]}
               onChange={handleCategoryChange}
             />

@@ -21,7 +21,7 @@ export const products = [
     title: "Captain-America",
     availbility: "Out Of Stock",
     price: "450",
-    categoryName: "Avengers",
+    categoryName: "AVENGERS",
     photo: "/captain-america.jpg",
     fastDelivery: true,
     rating : "5"
@@ -31,7 +31,7 @@ export const products = [
     title: "Hogwarts",
     availbility: "In stock",
     price: "400",
-    categoryName: "Harry Potter",
+    categoryName: "HARRY POTTER",
     photo: "/hogwarts.jpg",
     fastDelivery: true,
     rating : "4"
@@ -41,7 +41,7 @@ export const products = [
     title: "Dobby",
     availbility: "In stock",
     price: "479",
-    categoryName: "Harry Potter",
+    categoryName: "HARRY POTTER",
     photo: "/dobby.jpg",
     fastDelivery: false,
     rating : "3"
@@ -81,7 +81,7 @@ export const products = [
     title: "The Trio",
     availbility: "In stock",
     price: "400",
-    categoryName: "Harry Potter",
+    categoryName: "HARRY POTTER",
     photo: "/trio.jpg",
     fastDelivery: true,
     rating : "4"
@@ -91,7 +91,7 @@ export const products = [
     title: "Iron-Man",
     availbility: "In stock",
     price: "439",
-    categoryName: "Avengers",
+    categoryName: "AVENGERS",
     photo: "/iron-man.jpg",
     fastDelivery: false,
     rating : "5"
@@ -101,7 +101,7 @@ export const products = [
     title: "Marvel",
     availbility: "In stock",
     price: "400",
-    categoryName: "Avengers",
+    categoryName: "AVENGERS",
     photo: "/marvel2.jpg",
     fastDelivery: true,
     rating : "1"
@@ -111,7 +111,7 @@ export const products = [
     title: "Not Today",
     availbility: "In stock",
     price: "410",
-    categoryName: "Game Of Thrones",
+    categoryName: "GAME OF THRONES",
     photo: "/not-today.jpg",
     fastDelivery: true,
     rating : "1"

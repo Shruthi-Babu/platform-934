@@ -14,7 +14,7 @@ export const categories = [
   },
   {
     _id: uuid(),
-    categoryName: "GAMES OF THRONES",
+    categoryName: "GAME OF THRONES",
     description:"Game of Thrones is an American fantasy drama television series.",
     photo:"/got-category.jpg" 
 	},

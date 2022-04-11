@@ -17,6 +17,7 @@ const filterReducer = (state, action) => {
                     }
                 };
         case 'category-lp':
+            console.log(payload);
             Object.keys(state.category).forEach(function(key){ state.category[key] = false });
             return {...state, category:{...state.category, [payload]:true}};
         case "reset":
@@ -26,9 +27,9 @@ const filterReducer = (state, action) => {
                 rating: "all",
                 fastDelivery : false,
                 category: {
-                    "Harry Potter": true,
-                    "Game Of Thrones":true,
-                    "Avengers": true,
+                    "HARRY POTTER": true,
+                    "GAME OF THRONES":true,
+                    "AVENGERS": true,
                     "F.R.I.E.N.D.S.": true
                 },
                 cart: [],
