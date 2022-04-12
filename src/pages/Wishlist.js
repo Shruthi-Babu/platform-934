@@ -21,7 +21,7 @@ function Wishlist() {
         <div className="horizontal-listing" >
 
           {wishlist.length>0 && wishlist.map(p =>                     
-            <WishListCard className="product-item" key={p.id}  id={p.id} title={p.title} availbility={p.availbility} price={p.price} categoryName={p.categoryName} photo={p.photo} rating = {p.rating}/>                   
+            <WishListCard className="product-item" key={p.id} id={p.id} title={p.title} availbility={p.availbility} price={p.price} categoryName={p.categoryName} photo={p.photo} rating = {p.rating}/>                   
           )}
           
         </div>            

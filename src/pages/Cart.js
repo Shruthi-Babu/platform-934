@@ -23,7 +23,7 @@ function Cart(){
         <div className="horizontal-listing-cart" >
           {
             cart.length>0 && cart.map(p =>                     
-              <CartCard className="product-item" key={p.id}  title={p.title} price={p.price} categoryName={p.categoryName} photo={p.photo}/>                   
+              <CartCard className="product-item" key={p.id} id={p.id}  title={p.title} price={p.price} categoryName={p.categoryName} photo={p.photo}/>                   
             )
           }    
         </div> 

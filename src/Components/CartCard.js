@@ -5,9 +5,11 @@ import "./Stylesheets/HorizontalCard.css";
 function CartCard(props) {
   const {dispatch} = useProductFilter();
   const {title, price, categoryName, photo} = props;
+
   function handleDeleteFromCart(e){
       dispatch({type:'delete_from_cart', payload:props});
   }
+  
   function handleMoveToWishlist(e){
       dispatch({type:'delete_from_cart', payload:props});
       dispatch({type:'add_to_wishlist', payload:props});
