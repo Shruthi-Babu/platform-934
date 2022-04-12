@@ -1,9 +1,13 @@
 import React from 'react'
 import {Link} from "react-router-dom";
+import { useProductFilter } from '../context/ProductFilterContext';
+import { Cart } from '../pages';
 
 import "./Stylesheets/Navigation.css"
 
 function Navigation() {
+  const {state}= useProductFilter();
+  let {cart, wishlist} = state;
   return (
     <div>
         <nav>
@@ -17,12 +21,14 @@ function Navigation() {
                 <Link className='nav-item' to="/wishlist">
                   <span className='icon'>
                     <i className="fa fa-heart"></i>
+                    {wishlist.length>0 && <span className="badge-msg">{wishlist.length}</span>}
                   </span>
                   Wishlist
                 </Link>
                 <Link className='nav-item' to="/cart">
                   <span className="icon">
-                    <i className="fa fa-shopping-cart"></i>
+                    <i className="fa fa-shopping-cart" ></i>
+                    {cart.length>0 && <span className="badge-msg">{cart.length}</span>}
                   </span>
                   Cart
                 </Link>
