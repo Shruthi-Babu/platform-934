@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 import { useProductFilter } from '../context/ProductFilterContext';
 import "./Stylesheets/TotalPrice.css";
 

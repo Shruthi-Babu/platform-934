@@ -1,8 +1,9 @@
 import "./App.css";
+import Mockman from "mockman-js";
+
 import {Navigation} from "./Components";
 import {Cart, Login, Catalogue, LandingPage, Wishlist} from './pages';
 import {Routes, Route} from "react-router-dom";
-import Mockman from "mockman-js";
 import "./Components/Stylesheets/App.css";
 
 function App() {

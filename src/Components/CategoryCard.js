@@ -1,12 +1,12 @@
 import React from 'react';
-import "./Stylesheets/CategoryCard.css";
-import { useProductFilter } from '../context/ProductFilterContext';
 import {Link} from "react-router-dom";
 
+import "./Stylesheets/CategoryCard.css";
+import { useProductFilter } from '../context/ProductFilterContext';
 
-function CategoryCard(props) {
-    let categoryName = props.categoryName;
-    let photo = props.photo;   
+
+function CategoryCard({categoryName, photo}) {
+
     const {dispatch} = useProductFilter();
 
     function handleSelectCategory(event){

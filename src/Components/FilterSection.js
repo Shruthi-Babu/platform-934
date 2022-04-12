@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import { useProductFilter } from "../context/ProductFilterContext";
 import "./Stylesheets/FilterSection.css";
 
@@ -19,7 +20,7 @@ function FilterSection() {
   }
 
   function handleSortChange(event) {
-    dispatch({ payload: event.target.value, type: "sort" });
+    dispatch({ type: "sort", payload: event.target.value});
   }
 
   function handleFilterChange(event) {

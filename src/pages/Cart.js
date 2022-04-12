@@ -1,5 +1,6 @@
-import React from 'react'
-import { useProductFilter } from '../context/ProductFilterContext'
+import React from 'react';
+
+import { useProductFilter } from '../context/ProductFilterContext';
 import {ReactComponent as EmptyCart} from  "../assets/empty_cart.svg"; 
 import "../Components/Stylesheets/Cart.css";
 import CartCard from '../Components/CartCard';
@@ -7,7 +8,7 @@ import TotalPrice from '../Components/TotalPrice';
 
 function Cart(){
   const {state} = useProductFilter();
-  const cart = state.cart;
+  const {cart} = state;
   return (
     <div className='cart-container'>
       <h1>Your Shopping Cart</h1>      

@@ -3,7 +3,6 @@ import ProductCard from '../Components/ProductCard';
 import FilterSection from '../Components/FilterSection';
 import { useProductFilter } from '../context/ProductFilterContext';
 import '../Components/Stylesheets/Catalogue.css';
-
 import {getFilteredData} from '../utils';
 
 
