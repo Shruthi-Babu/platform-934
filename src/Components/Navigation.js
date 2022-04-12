@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom";
 import { useProductFilter } from '../context/ProductFilterContext';
-import { Cart } from '../pages';
 
 import "./Stylesheets/Navigation.css"
 
