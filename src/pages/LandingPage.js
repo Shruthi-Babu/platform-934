@@ -13,8 +13,7 @@ function LandingPage() {
     <div>
       <div>LandingPage</div>
       <div className='banner-section'>    
-        {/* <p className='site-heading'>PLATFORM 9 3/4</p> */}
-        <img className="logo" src={logo}/>
+        <img className="logo" src={logo} alt="site-logo" />
       </div>
       <h1 className='category-heading'> Featured categories</h1>
 
