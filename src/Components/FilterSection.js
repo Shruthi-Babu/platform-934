@@ -32,7 +32,6 @@ function FilterSection() {
 
   function handleClearFilter(event) {
     dispatch({ type: "reset" });
-    //console.log(state);
   }
 
   return (

@@ -5,7 +5,6 @@ import "./Stylesheets/HorizontalCard.css";
 function CartCard(props) {
   const {dispatch} = useProductFilter();
   const {title, price, categoryName, photo} = props;
-  console.log(title);
   function handleDeleteFromCart(e){
       dispatch({type:'delete_from_cart', payload:props});
   }

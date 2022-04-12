@@ -3,16 +3,11 @@ import { useProductFilter } from '../context/ProductFilterContext';
 import "./Stylesheets/HorizontalCard.css";
 
 function WishListCard(props) {
-    const {state, dispatch} = useProductFilter();
-    const {className, id, title, availbility, price, categoryName, photo, rating} = props;
-    console.log(title);
-    // console.log("props:", props);
-    console.log("wishlist:",state.wishlist);
+    const {dispatch} = useProductFilter();
+    const {title, price, categoryName, photo} = props;
 
     function handleDeleteFromWishList(e){
-        //console.log("sending:",props);
         dispatch({type:'delete_from_wishlist', payload:props});
-        //console.log("after:", state.wislist);
     }
     function handleMoveToCart(e){
         dispatch({type:'delete_from_wishlist', payload:props});
@@ -22,7 +17,7 @@ function WishListCard(props) {
         <div>
            
              <div className='card-horizontal'>
-                <img  className='horizontal-card-img' src={require("../assets/floopy.jpg")} alt="card image"/>
+                <img  className='horizontal-card-img' src={require(`../assets${photo}`)} alt="wishlist card"/>
                 
                 <div className='horizontal-card-body'>
 

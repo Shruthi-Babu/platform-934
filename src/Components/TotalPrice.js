@@ -3,11 +3,10 @@ import { useProductFilter } from '../context/ProductFilterContext';
 import "./Stylesheets/TotalPrice.css";
 
 function TotalPrice() {
-    const {state, dispatch} = useProductFilter();
+    const {state} = useProductFilter();
     const cart = state.cart;
     const totalprice = cart.reduce(
         (prev, curr) => Number(prev) + Number(curr.price), 0);
-    console.log(cart.length)
     return (
         <div className='total-price-container'>
             <h3>Final Price</h3>

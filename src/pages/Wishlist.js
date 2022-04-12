@@ -6,10 +6,8 @@ import WishListCard from '../Components/WishListCard';
 
 
 function Wishlist() {
-  const {state, dispatch} = useProductFilter();
+  const {state} = useProductFilter();
   const wishlist = state.wishlist;
-
-  //console.log(wishlist);
 
   return (
     <div className='wishlist-container'>

@@ -9,7 +9,6 @@ function CategoryContextProvider({children}){
             try{
                 const response = await fetch('/api/categories');
                 const json = await response.json();
-                //console.log(JSON.stringify(json));
                 setCategories(json.categories);
             } catch(e){
                 console.error("Failed to fetch category data");

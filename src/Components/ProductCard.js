@@ -1,27 +1,24 @@
 import React from 'react'
 import { useProductFilter } from '../context/ProductFilterContext';
 import './Stylesheets/ProductCard.css';
-import always from "../assets/always.jpg";
 
 function ProductCard(props) {
-  const {state, dispatch} = useProductFilter();
-  const {id, title, availbility, price, categoryName, photo, rating} = props;
+  const {dispatch} = useProductFilter();
+  const {title, availbility, price, categoryName, photo, rating} = props;
 
   
   function handleAddToCart(e){
     dispatch({type:'add_to_cart', payload: props});
-    console.log(title);
   }
 
   function handleAddToWishList(e){
     dispatch({type:'add_to_wishlist', payload: props});
-    console.log(props);
   }
   return (
     <div>
         <div className="card card-standard">
           <div >
-            <img className="card-img" src={require(`../assets${photo}`)}/>
+            <img className="card-img" src={require(`../assets${photo}`)} alt="wishlist card"/>
           </div>
         
           <div className="card-body">

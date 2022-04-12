@@ -1,13 +1,11 @@
-import { useProductFilter } from "../context/ProductFilterContext";
-
-function getFilteredData(state, productData, dispatch) {
+function getFilteredData(state, productData) {
     let {sort, includeOOS, rating, fastDelivery, category} = state;    
     
     productData = productData.filter(prod => includeOOS ? true : prod.availbility ==="In stock");
 
     productData = productData.filter(prod => rating==="all" ? true : prod.rating>=rating);
 
-    productData = productData.filter(prod => category[prod.categoryName]==true); 
+    productData = productData.filter(prod => category[prod.categoryName]===true); 
 
     productData = productData.filter(prod => fastDelivery ? prod.fastDelivery===true : true);
 

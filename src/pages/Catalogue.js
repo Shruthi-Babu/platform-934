@@ -5,7 +5,6 @@ import { useProductFilter } from '../context/ProductFilterContext';
 import '../Components/Stylesheets/Catalogue.css';
 
 import {getFilteredData} from '../utils';
-import { useEffect, useState } from 'react';
 
 
 function Catalogue() {
@@ -14,8 +13,6 @@ function Catalogue() {
     let productData = products.products;
 
     productData = getFilteredData(state, productData, dispatch);
-
-    //console.log(productData);
 
     return (
         <div className='catalogue'>

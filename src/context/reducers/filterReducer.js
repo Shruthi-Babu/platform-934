@@ -17,7 +17,6 @@ const filterReducer = (state, action) => {
                     }
                 };
         case 'category-lp':
-            console.log(payload);
             Object.keys(state.category).forEach(function(key){ state.category[key] = false });
             return {...state, category:{...state.category, [payload]:true}};
         case "reset":

@@ -8,7 +8,6 @@ import TotalPrice from '../Components/TotalPrice';
 function Cart(){
   const {state} = useProductFilter();
   const cart = state.cart;
-  console.log(cart);
   return (
     <div className='cart-container'>
       <h1>Your Shopping Cart</h1>      
