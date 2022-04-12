@@ -6,7 +6,7 @@ import CartCard from '../Components/CartCard';
 import TotalPrice from '../Components/TotalPrice';
 
 function Cart(){
-  const {state, dispatch} = useProductFilter();
+  const {state} = useProductFilter();
   const cart = state.cart;
   console.log(cart);
   return (
@@ -24,7 +24,7 @@ function Cart(){
         <div className="horizontal-listing-cart" >
           {
             cart.length>0 && cart.map(p =>                     
-              <CartCard className="product-item" key={p.id}  id={p.id} title={p.title} availbility={p.availbility} price={p.price} categoryName={p.categoryName} photo={p.photo} rating = {p.rating}/>                   
+              <CartCard className="product-item" key={p.id}  title={p.title} price={p.price} categoryName={p.categoryName} photo={p.photo}/>                   
             )
           }    
         </div> 

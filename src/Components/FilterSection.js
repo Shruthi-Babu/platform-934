@@ -6,8 +6,7 @@ function FilterSection() {
   const { state, dispatch } = useProductFilter();
   const [categoryChecked, setChecked] = useState(false);
   const [categoryAllChecked, setCategoryAllChecked] = useState(true);
-  const { sort, includeOOS, rating, fastDelivery, category, cart, wishlist } =
-    state;
+  const { includeOOS,fastDelivery, category} = state;
   function handleRatingChange(event) {
     dispatch({ payload: event.target.value, type: "rating" });
   }
@@ -129,7 +128,7 @@ function FilterSection() {
               name="filter"
               value="includeOOS"
               onChange={handleFilterChange}
-              checked={state.includeOOS}
+              checked={includeOOS}
             />
             Include Out Of Stock
           </label>
@@ -140,7 +139,8 @@ function FilterSection() {
               name="filter"
               value="fastdel"
               onChange={handleFilterChange}
-              checked={state.fastDelivery}
+              //checked={fastDelivery}
+              checked={fastDelivery}
             />
             Fast Delivery
           </label>
@@ -154,8 +154,7 @@ function FilterSection() {
               type="checkbox"
               name="filter"
               value="HARRY POTTER"
-              checked={state.category["HARRY POTTER"]}
-              //defaultChecked={state.category["Harry Potter"]}
+              checked={category["HARRY POTTER"]}
               onChange={handleCategoryChange}
             />
             Harry Potter
@@ -166,8 +165,7 @@ function FilterSection() {
               type="checkbox"
               name="filter"
               value="AVENGERS"
-              checked={state.category["AVENGERS"]}
-              //defaultChecked={state.category["Avengers"]}
+              checked={category["AVENGERS"]}
               onChange={handleCategoryChange}
             />
             Avengers
@@ -178,8 +176,7 @@ function FilterSection() {
               type="checkbox"
               name="filter"
               value="GAME OF THRONES"
-              checked={state.category["GAME OF THRONES"]}
-              //defaultChecked={state.category["Game Of Thrones"]}
+              checked={category["GAME OF THRONES"]}
               onChange={handleCategoryChange}
             />
             Game Of Thrones
@@ -190,8 +187,7 @@ function FilterSection() {
               type="checkbox"
               name="filter"
               value="F.R.I.E.N.D.S."
-              checked={state.category["F.R.I.E.N.D.S."]}
-              //defaultChecked={state.category["F.R.I.E.N.D.S."]}
+              checked={category["F.R.I.E.N.D.S."]}
               onChange={handleCategoryChange}
             />
             F.R.I.E.N.D.S.

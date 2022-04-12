@@ -3,8 +3,8 @@ import { useProductFilter } from '../context/ProductFilterContext';
 import "./Stylesheets/HorizontalCard.css";
 
 function CartCard(props) {
-  const {state, dispatch} = useProductFilter();
-  const {className,id, title, availbility, price, categoryName, photo, rating} = props;
+  const {dispatch} = useProductFilter();
+  const {title, price, categoryName, photo} = props;
   console.log(title);
   function handleDeleteFromCart(e){
       dispatch({type:'delete_from_cart', payload:props});
@@ -17,7 +17,7 @@ function CartCard(props) {
     <div>
        
          <div className='card-horizontal'>
-            <img  className='horizontal-card-img' src={require("../assets/floopy.jpg")} alt="card image"/>
+            <img  className='horizontal-card-img' src={require(`../assets${photo}`)} alt="cart"/>
             
             <div className='horizontal-card-body'>
 
