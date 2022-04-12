@@ -154,17 +154,23 @@ li{
 
 .wishlist-icon {
     border-radius: 50%;
-    color: var(--gray);
     position: absolute;
     top: 4%;
     right:5%;
     font-size: 2rem;
 }
 
-.wishlist-icon:hover{
+.notAddedToWL{
+    color: var(--gray);
+}
+
+.addedToWL {
     color: var(--red);
 }
 
+.fa-heart:hover {
+    color: var(--red);
+}
 
 .card-img {
     padding: 0px;
