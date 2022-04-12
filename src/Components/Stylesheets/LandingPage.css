@@ -1,7 +1,17 @@
 @import "../Stylesheets/Constants.css";
 
 .banner-section {
+    margin-top: 3rem;
+}
+.site-heading {
+    font-size: 2.5rem;
+}
+.logo{
+    width: 100%;
+}
 
+.category-heading{
+    margin-top: 0;
 }
 .categories {
     display: grid;
