@@ -1,0 +1,47 @@
+@import './Constants.css';
+
+.filter-section {
+    padding: 1rem;
+}
+
+.filter-item {
+    display: inline;
+    align-items: center;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.filter-main-heading{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.clear-btn{
+    margin-top: 0;
+}
+
+@media (max-width: 40rem) {
+    .all-filters {
+        display: flex;
+        flex-direction: wrap;
+    }
+}
+
+.sorting-filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    color: var(--black);
+    text-decoration: underline;
+    padding: 1rem;
+    cursor: pointer;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}

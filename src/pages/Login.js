@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import {ReactComponent as UnderConstruction} from  "../assets/under_construction.svg"; 
+import "../Components/Stylesheets/Login.css";
 
 function Login() {
   return (
-    <div>Login</div>
+    <div>
+      <UnderConstruction className="under-cons" />
+      <p className='under-cons-text'>Feature Under Construction</p>
+    </div>
   )
 }
 
-export default Login
+export default Login;

@@ -1,0 +1,12 @@
+@import './Constants.css';
+
+.under-cons{
+    width: 30%;
+    height: 30%;
+    margin:auto;
+    margin-top: 10%;
+}
+
+.under-cons-text{
+    font-size: 3rem;
+}

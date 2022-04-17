@@ -1,0 +1,30 @@
+@import './Constants.css';
+
+
+.cart-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    
+}
+
+.total-price-section {
+    margin-right: 2.5rem;
+}
+.empty-cart {
+    width: 30%;
+    height: 50%;
+    margin:auto;
+}
+
+.empty-text{
+    font-size: 3rem;
+}
+
+.horizontal-listing-cart {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* padding: 2rem; */
+    grid-gap: 1rem;
+    width: auto;
+}
+

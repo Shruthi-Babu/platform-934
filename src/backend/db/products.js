@@ -21,7 +21,7 @@ export const products = [
     title: "Captain-America",
     availbility: "Out Of Stock",
     price: "450",
-    categoryName: "Avengers",
+    categoryName: "AVENGERS",
     photo: "/captain-america.jpg",
     fastDelivery: true,
     rating : "5"
@@ -29,9 +29,9 @@ export const products = [
   {
     _id: uuid(),
     title: "Hogwarts",
-    availbility: "Out Of Stock",
+    availbility: "In stock",
     price: "400",
-    categoryName: "Harry Potter",
+    categoryName: "HARRY POTTER",
     photo: "/hogwarts.jpg",
     fastDelivery: true,
     rating : "4"
@@ -41,28 +41,48 @@ export const products = [
     title: "Dobby",
     availbility: "In stock",
     price: "479",
-    categoryName: "Harry Potter",
+    categoryName: "HARRY POTTER",
     photo: "/dobby.jpg",
     fastDelivery: false,
     rating : "3"
   },
   {
     _id: uuid(),
-    title: "Floopy",
+    title: "How you doing?",
     availbility: "In stock",
     price: "459",
     categoryName: "F.R.I.E.N.D.S.",
-    photo: "/floopy.jpg",
+    photo: "/how-you-doing.jpg",
     fastDelivery: true,
-    rating : "1"
+    rating : "4"
+  },
+  {
+    _id: uuid(),
+    title: "On a break",
+    availbility: "In stock",
+    price: "459",
+    categoryName: "F.R.I.E.N.D.S.",
+    photo: "/on-a-break.jpg",
+    fastDelivery: true,
+    rating : "3"
+  },
+  {
+    _id: uuid(),
+    title: "Hugsy",
+    availbility: "In stock",
+    price: "459",
+    categoryName: "F.R.I.E.N.D.S.",
+    photo: "/hugsy.jpg",
+    fastDelivery: true,
+    rating : "3"
   },
   {
     _id: uuid(),
     title: "The Trio",
-    availbility: "Out Of Stock",
+    availbility: "In stock",
     price: "400",
-    categoryName: "Harry Potter",
-    photo: "/hogwarts.jpg",
+    categoryName: "HARRY POTTER",
+    photo: "/trio.jpg",
     fastDelivery: true,
     rating : "4"
   },
@@ -71,7 +91,7 @@ export const products = [
     title: "Iron-Man",
     availbility: "In stock",
     price: "439",
-    categoryName: "Avengers",
+    categoryName: "AVENGERS",
     photo: "/iron-man.jpg",
     fastDelivery: false,
     rating : "5"
@@ -79,19 +99,19 @@ export const products = [
   {
     _id: uuid(),
     title: "Marvel",
-    availbility: "Out Of Stock",
+    availbility: "In stock",
     price: "400",
-    categoryName: "Avengers",
-    photo: "/marve2.jpg",
+    categoryName: "AVENGERS",
+    photo: "/marvel2.jpg",
     fastDelivery: true,
     rating : "1"
   },
   {
     _id: uuid(),
     title: "Not Today",
-    availbility: "Out Of Stock",
+    availbility: "In stock",
     price: "410",
-    categoryName: "Game Of Thrones",
+    categoryName: "GAME OF THRONES",
     photo: "/not-today.jpg",
     fastDelivery: true,
     rating : "1"

@@ -1,2 +1,181 @@
 /* @import url(https://my-ui-shruthi.netlify.app/card/card.css); */
-@import url(https://my-ui-shruthi.netlify.app/styles.css);
+/* @import url(https://my-ui-shruthi.netlify.app/styles.css); */
+@import './Constants.css';
+
+.card {
+    margin: 0.5rem;
+    border-radius: 1rem;
+    /* box-shadow:  0.1rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5); */
+    border: 1px solid white;
+    position: relative;
+    background-color: var(--primary-color);    
+}
+.card-with-badge {
+    position: relative;
+}
+.card-badge {
+    position: absolute;
+    top: 0%;
+    left:90%;
+    font-size: 2rem;
+}
+
+.card-badge:hover {
+    color: var(--warning-color);
+}
+
+.card:hover{
+    box-shadow: 0 1rem 1rem rgba(33,33,33,.7);
+}
+
+
+.card-standard {
+    position: relative;
+    width: auto;
+    /* height: 40%; */
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+
+.card-close-btn {
+    font-size: 2rem;
+    position: absolute;
+    color: var(--gray);
+    right: 0px;
+    border-radius: 50%;
+    top:0;
+}
+
+.card-close-btn:hover {
+    color: rgba(33,33,33,.7);
+    cursor: pointer;
+}
+
+.text-overlay {
+    background-color: rgba(128, 128, 128, 0.5);
+    color: var(--primary-color);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-weight: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+}
+.card-rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 1.5rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: var(--primary-color);
+    position: absolute;
+    background-color: var(--dark-gray);
+    top: 60%;
+    left:80%;
+    border-radius: 5px;
+    width: 2.5rem;
+}
+
+.card-img {
+   margin: auto;
+   object-fit: cover;
+   margin: 0 auto;
+   border-radius: 1rem;
+   height: auto;
+   max-height: 20rem;
+   width: auto;
+   max-width: 25rem;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.card-title-text {    
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+.card-desc {
+    text-align: center;
+    margin: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 8px;
+    color: var(--gray);
+}
+.price-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+}
+
+li{
+    padding: 5px;
+}
+.filled {
+    color:var(--warning-color);
+    padding-left: 5px;
+}
+
+.fa-shopping-cart {
+    font-size: 1.5rem;
+}
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 90%;
+    height: 2rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--red);
+    color: var(--primary-color);
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    bottom: 1rem;
+}
+
+.wishlist-icon {
+    border-radius: 50%;
+    position: absolute;
+    top: 4%;
+    right:5%;
+    font-size: 2rem;
+}
+
+.notAddedToWL{
+    color: var(--gray);
+}
+
+.addedToWL {
+    color: var(--red);
+}
+
+.fa-heart:hover {
+    color: var(--red);
+}
+
+.card-img {
+    padding: 0px;
+    width: 90%;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
